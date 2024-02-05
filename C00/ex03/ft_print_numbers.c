@@ -6,13 +6,13 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 23:21:23 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/03 23:45:53 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/05 11:54:28 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_numbers(void)
+void    ft_print_numbers(void)
 {
     int num = '0';
     while (num <= '9')
