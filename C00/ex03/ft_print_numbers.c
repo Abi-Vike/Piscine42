@@ -3,21 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
+/*   By: ayacob <ayacob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 23:21:23 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/05 11:54:28 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/05 13:06:11 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_print_numbers(void)
+void	ft_print_numbers(void)
 {
-    int num = '0';
-    while (num <= '9')
-    {
-        write(1, &num, 1);
-        num ++;
-    }
+	int	num;
+
+	num = '0';
+	while (num <= '9')
+	{
+		write(1, &num, 1);
+		num ++;
+	}
 }

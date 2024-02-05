@@ -3,22 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
+/*   By: ayacob <ayacob@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/03 21:38:16 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/03 23:14:47 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/05 13:09:35 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_print_alphabet(void)
+void	ft_print_alphabet(void)
 {
-    char letter = 'a';
+	char	letter;
 
-    while (letter <= 'z')
-    {
-        write(1, &letter, 1);
-        letter ++;
-    }
+	letter = 'a';
+	while (letter <= 'z')
+	{
+		write(1, &letter, 1);
+		letter ++;
+	}
 }
