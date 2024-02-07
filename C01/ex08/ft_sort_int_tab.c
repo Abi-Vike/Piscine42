@@ -6,23 +6,28 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 14:48:33 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/07 15:13:12 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/07 16:19:14 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-void ft_sort_int_tab(int *tab, int size) {
-    // using bubble sort algorithm here
-    for (int i = 0; i < size - 1; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if (tab[j] > tab[j + 1]) {
-                // need to Swap elements if they are in the wrong order
-                int temp = tab[j];
+void ft_sort_int_tab(int *tab, int size){
+    int temp, i, j;
+    i = 0;
+    
+    while(i < (size - 1)){
+        j = 0;
+
+        while(j < (size - i - 1)){
+            if (tab[j] > tab[j + 1]){
+                temp = tab[j];
                 tab[j] = tab[j + 1];
                 tab[j + 1] = temp;
             }
+            j++;
         }
+        i++;
     }
 }
 
