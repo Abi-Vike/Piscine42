@@ -1,33 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/06 13:45:35 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/06 23:27:40 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/07 00:55:19 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/07 11:38:03 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+#include <unistd.h>
+
+void ft_strlen(char *str)
 {
-    int temp = *a;  
-    *a = *b;   
-    *b = temp;
+    int count = 0;
+    while (*str != '\0')
+    {
+        count++;
+        str++;
+    }
+    char count_char = count + '0'; // converting integer to char
+    write(1, &count_char, 1); 
 }
-
-/*
-int main()
-{
-    int x = 10, y = 20;
-
-    ft_swap(&x, &y);
-
-    printf("X after swapping: %d\n", x);
-    printf("Y after swapping: %d\n", y);
-
-    return 0;
-}
-
-*/

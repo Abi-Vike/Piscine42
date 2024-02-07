@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_swap.c                                          :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/06 13:45:35 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/06 23:27:40 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/06 23:47:13 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/06 23:57:10 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void ft_ultimate_div_mod(int *a, int *b)
 {
-    int temp = *a;  
-    *a = *b;   
-    *b = temp;
+    int temp = *a;
+    *a = temp / *b;
+    *b = temp % *b;
+
 }
-
-/*
-int main()
-{
-    int x = 10, y = 20;
-
-    ft_swap(&x, &y);
-
-    printf("X after swapping: %d\n", x);
-    printf("Y after swapping: %d\n", y);
-
-    return 0;
-}
-
-*/
