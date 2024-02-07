@@ -6,11 +6,11 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/06 12:40:02 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/06 13:44:41 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/07 15:11:54 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+//#include <stdio.h>
 
 void    ft_ultimate_ft(int *********nbr)
 {
