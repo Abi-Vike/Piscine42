@@ -6,11 +6,22 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/05 18:12:30 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/07 15:11:59 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/09 08:49:11 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void    ft_ft(int *nbr)
+#include <stdio.h>
+//#include <unistd.h>
+
+void ft_ft(int *nbr)
 {
     *nbr = 42;
+}
+
+int main()
+{
+    int number;
+    
+    ft_ft(&number);
+    printf("%d\n", number);
 }
