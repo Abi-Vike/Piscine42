@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_printable.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/07 22:00:24 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/12 21:03:12 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/12 21:03:42 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/12 22:05:03 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = 0;
-	while(src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
+int ft_str_is_printable(char *str) {
+    while (*str) {
+        if (*str < 32 || *str > 126) {
+            // means Non-printable character found
+            return 0;
+        }
+        str++;
+    }
+    return 1;
 }
 
 /*
-int main(){
-    char string[] = "Tom";
-    char copied[4];
+int main()
+{
+	char string[]="om\tt";
 
-    ft_strcpy(copied, string);
-    printf("Copied string: %s\n", copied); // Output: Copied string: Tom
+	int result = ft_str_is_printable(string);
 
-    return 0;
+	printf("%d\n", result);
 }
 */

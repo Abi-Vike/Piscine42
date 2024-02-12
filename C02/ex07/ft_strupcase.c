@@ -1,38 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/07 22:00:24 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/12 21:03:12 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/12 21:03:42 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/12 22:23:41 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = 0;
-	while(src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
+char *ft_strupcase(char *str) {
+    while (*str) {
+        if (*str >= 'a' && *str <= 'z') {
+            *str = *str - 32;
+        }
+        str++;
+    }
+    return str;
 }
 
 /*
-int main(){
-    char string[] = "Tom";
-    char copied[4];
-
-    ft_strcpy(copied, string);
-    printf("Copied string: %s\n", copied); // Output: Copied string: Tom
-
+int main() {
+    char string[] = "toMmy";
+    ft_strupcase(string);
+    printf("%s\n", string);
     return 0;
 }
 */
