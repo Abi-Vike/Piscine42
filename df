@@ -1,0 +1,119 @@
+[33mcommit 75dbeb26528a59194564d44ba4951ccd85be2d45[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Wed Feb 14 15:10:32 2024 +0100
+
+    stay aside please
+
+[33mcommit f2c1e4ee788617f290bde51045ad76bae812929e[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Wed Feb 14 15:02:11 2024 +0100
+
+    deleted ex12
+
+[33mcommit e1ce61dfcecf11c17e64c2c6c248b51c5455fac6[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Wed Feb 14 08:03:40 2024 +0100
+
+    done with 10 & 12
+
+[33mcommit ff1b5a47761f2080e4f3c10cb0f7b9dd4ae571de[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Mon Feb 12 23:30:26 2024 +0100
+
+    almost done with C02
+
+[33mcommit 6fb6733cb053ea21805739f4267e62572c5e93f6[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Mon Feb 12 18:27:00 2024 +0100
+
+    now added the files of Rush01 actually
+
+[33mcommit 6439a00aee0b46b3fc778eae8217b5a0448ab32f[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Mon Feb 12 18:26:07 2024 +0100
+
+    added some new files of the Rush01
+
+[33mcommit 4c5b37f8fed067a6e4ad5e410ae3c652621ee166[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Fri Feb 9 10:03:13 2024 +0100
+
+    some modifications including addition of main functions
+
+[33mcommit 40c5185b125ce631f8cbcc2ce77e72c88f79c237[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Wed Feb 7 16:20:49 2024 +0100
+
+    changed the last exercise from for loop to while loop
+
+[33mcommit 7e724bc26ff8da1ff478919dd4cf5f4f787e4ad2[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Wed Feb 7 15:13:58 2024 +0100
+
+    done with all, just the norminette left
+
+[33mcommit 00e29fd7e737d4c3eee7df91f28a1544dfb2cf32[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Wed Feb 7 14:52:25 2024 +0100
+
+    solved ex06 and also 7 & 8
+
+[33mcommit 307af6bde8350a9109e3e56d68177eea685abeee[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Wed Feb 7 11:39:46 2024 +0100
+
+    done with C01 ex03, 4, 5 and having troubles with 6
+
+[33mcommit 281a4d4e32ffd18cef34d4b92fd2f574366a1b8c[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Tue Feb 6 14:27:34 2024 +0100
+
+    Adding C01 with 3 exercises done although with weird compilation issue on ex02
+
+[33mcommit 087136182de0b5ec2fd03f7944607185d97b6e10[m
+Author: Abi-Vike <tomy0abr@gmail.com>
+Date:   Mon Feb 5 17:11:41 2024 +0100
+
+    done with Shell00 and C00
+
+[33mcommit 1b567cf207912af358712d1607dd85cc342fc1db[m
+Author: Abi-Vike <tomy0abr@gmail.com>
+Date:   Mon Feb 5 15:44:00 2024 +0100
+
+    done with norminette validation of C00, except ex06
+
+[33mcommit 5b28c8c450d9fbe11926951fb9facae03d0e0023[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Mon Feb 5 11:54:45 2024 +0100
+
+    done with ex03
+
+[33mcommit 142c13156dbeeb55c271f76bf58a3bdc2aa41f5d[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Mon Feb 5 11:41:17 2024 +0100
+
+    Just connected to my PC
+
+[33mcommit 36f2bc81863119a069476ab8e11b1725951bd03e[m
+Author: Abi-Vike <tomy0abr@gmail.com>
+Date:   Mon Feb 5 11:00:51 2024 +0100
+
+    shell00 push from office
+
+[33mcommit eaac01179d78b789abf4b58c4818fec3d257e2e2[m
+Author: Abiel Yacob <tomy0abr@gmail.com>
+Date:   Sat Feb 3 23:13:45 2024 +0100
+
+    Update README.md
+
+[33mcommit 5e5609b11c6b23e417c0d64b6b7d471ef3a5bad2[m
+Author: ayacob <ayacob@student.42berlin.de>
+Date:   Sat Feb 3 22:31:38 2024 +0100
+
+    First push of empty project files
+
+[33mcommit 383ddc1a22c94f551de85f809c581882b107cf1e[m
+Author: Abiel Yacob <tomy0abr@gmail.com>
+Date:   Sat Feb 3 22:20:20 2024 +0100
+
+    Initial commit
