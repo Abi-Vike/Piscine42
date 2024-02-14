@@ -42,52 +42,6 @@ int solve(int grid[4][4], int row, int col) {
     return 0; // No valid number found
 }
 
-/**/
-void solve_with_constraints(int row_constraints[8], int col_constraints[8]) {
-    int grid[4][4];
-    int i, j;
-
-    // Initialize grid with -1 to represent empty cells
-    for (i = 0; i < 4; i++) {
-        for (j = 0; j < 4; j++) {
-            grid[i][j] = -1;
-        }
-    }
-
-    // Applying row constraints
-    for (i = 0; i < 4; i++) {
-        if (row_constraints[i] == 4) {
-            // Fill the entire row with numbers 1 to 4
-            for (j = 0; j < 4; j++) {
-                grid[i][j] = j + 1;
-            }
-        }
-    }
-    
-    // Applying column constraints
-    for (j = 0; j < 4; j++) {
-        if (col_constraints[j] == 4) {
-            // Fill the entire column with numbers 1 to 4
-            for (i = 0; i < 4; i++) {
-                if (grid[i][j] == -1) {
-                    grid[i][j] = i + 1;
-                }
-            }
-        }
-    }
-
-    // Solve the puzzle
-    if (solve(grid, 0, 0)) {
-        print_solution(grid);
-    } else {
-        write(1, "No solution found\n", 18);
-    }
-}
-
-/**/
-
-
-
 void solve_with_constraints(int row_constraints[8], int col_constraints[8]) {
     int grid[4][4];
     for (int i = 0; i < 4; i++) {
