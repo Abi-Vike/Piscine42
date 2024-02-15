@@ -6,7 +6,7 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 21:03:42 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/14 07:46:42 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/15 13:36:50 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 char	*ft_strlowcase(char *str)
 {
-	while (*str)
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (*str >= 'A' && *str <= 'Z')
+		if (str[i] >= 'A' && str[i] <= 'Z')
 		{
-			*str = *str + 32;
+			str[i] = str[i] + 32;
 		}
-		str++;
+		i++;
 	}
 	return (str);
 }

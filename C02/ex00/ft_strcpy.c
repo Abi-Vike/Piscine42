@@ -6,15 +6,13 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 22:00:24 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/14 07:46:18 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/15 13:24:53 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 char	*ft_strcpy(char *dest, char *src)
 {
-	int	i;
+	int i;
 
 	i = 0;
 	while (src[i] != '\0')
@@ -22,17 +20,15 @@ char	*ft_strcpy(char *dest, char *src)
 		dest[i] = src[i];
 		i++;
 	}
+	dest[i] = '\0';
 	return (dest);
 }
 
 /*
-int main(){
-    char string[] = "Tom";
-    char copied[4];
+#include <stdio.h>
 
-    ft_strcpy(copied, string);
-    printf("Copied string: %s\n", copied); // Output: Copied string: Tom
-
-    return 0;
+int main()
+{
+	printf("");	
 }
 */

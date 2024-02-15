@@ -6,35 +6,56 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 21:03:42 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/14 08:06:29 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/15 13:46:44 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-char *ft_strcapitalize(char *str) {
-    int capitalize_next = 1; // Flag to indicate whether the next character should be capitalized
-    while (*str) {
-        if ((*str >= 'a' && *str <= 'z') || (*str >= 'A' && *str <= 'Z') || (*str >= '0' && *str <= '9')) {
-            if (capitalize_next) {
-                *str = (*str >= 'a' && *str <= 'z') ? (*str - 'a' + 'A') : *str;
-                capitalize_next = 0; // Reset the flag
-            } else {
-                *str = (*str >= 'A' && *str <= 'Z') ? (*str - 'A' + 'a') : *str;
-            }
-        } else {
-            // Reset the flag if the character is non-alphanumeric
-            capitalize_next = 1;
-        }
-        str++; 
-    }
-    return str;
+char	*ft_strlowcase(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'A' && str[i] <= 'Z')
+			str[i] += 32;
+		i++;
+	}
+	return (str);
 }
+
+char	*ft_strcapitalize(char *str)
+{
+	int		i;
+	int		i1;
+
+	i = 0;
+	i1 = 1;
+	ft_strlowcase(str);
+	while (str[i] != '\0')
+	{
+		if (str[i] >= 'a' && str[i] <= 'z')
+		{
+			if (i1 == 1)
+				str[i] -= 32;
+			    i1 = 0;
+		}
+		else if (str[i] >= '0' && str[i] <= '9')
+			i1 = 0;
+		else
+			i1 = 1;
+		i++;
+	}
+	return (str);
+}
+
 /*
 int main() {
-    char string[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
+    char string[] = "salut, comment tu vas ? 42mots;+et+un";
     ft_strcapitalize(string);
-    printf("%s\n", string); // Output: "Salut, Comment Tu Vas ? 42mots Quarante-Deux; Cinquante+Et+Un"
+    printf("%s\n", string);
     return 0;
 }
 */

@@ -6,34 +6,37 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/12 19:41:56 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/12 21:03:50 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/15 13:31:59 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
-	while (i < (int)n)
+	while (src[i] != '\0' && i < n)
 	{
 		dest[i] = src[i];
+		i++;
+	}
+	while (i < n)
+	{
+		dest[i] = '\0';
 		i++;
 	}
 	return (dest);
 }
 
 /*
-int main(){
-	unsigned int num;
-	
-	num = 5;
-	char string[] = "Tommy";
-	char destination[num];
+#include <stdio.h>
 
-	ft_strncpy(destination, string, num);
+int main(){
+	char string[] = "Tommy";
+	char destination[] = "Bon";
+
+	ft_strncpy(destination, string, 8);
 	printf("Copied: %s\n", destination);
 }
+
 */
