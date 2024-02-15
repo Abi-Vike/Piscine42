@@ -5,75 +5,30 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/14 09:57:10 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/14 11:23:10 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/15 08:17:21 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/15 11:54:40 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-#include <stdio.h>
-
 int ft_strcmp(char *s1, char *s2)
 {
-	int sum1;
-	int sum2;
-	
-	sum1 = 0;
-	sum2 = 0;
-	while (*s1)
-	{
-		sum1 += *s1;
-		s1++;	
-	}
-	while (*s2)
-	{
-		sum2 += *s2;
-		s2++;
-	}
+	unsigned int i;
 
-	if (sum1 < sum2)
-		return(sum1 - sum2);	
-	else if (sum1 > sum2)
-		return(sum1 - sum2);	
-	else
-		return(0);
+	i=0;
+	while(s1[i] == s2[i] && (s1[i] != '\0' || s1[i] != '\0'))
+	{
+		i++;
+	}
+	return (s1[i] - s2[i]);
 }
 
-
-int main()
-{
-	char str1[] = "A";
-	char str2[] = "";
-	int res;
-	
-	res = ft_strcmp(str1, str2);
-	printf("Result = %d\n", res);
-	return(0);
-}
-
-*/
-
+/*
 //#include <stdio.h>
 
-int ft_strcmp(char *s1, char *s2)
-{
-    while (*s1 && *s2 && *s1 == *s2) {
-        s1++;
-        s2++;
-    }
-
-    return *s1 - *s2;
-}
-/*
 int main()
 {
-    char str1[] = "Tom";
-    char str2[] = "ToM";
-    int res;
-    
-    res = ft_strcmp(str1, str2);
-    printf("Result = %d\n", res);
-    return 0;
+	printf("%d\n", ft_strcmp("Tommy", "Tom"));
+	printf("%d\n", ft_strcmp("Hi", "He"));
+	printf("%d\n", ft_strcmp("He", "Hello"));
 }
 */
-

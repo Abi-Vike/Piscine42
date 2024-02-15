@@ -1,41 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/15 08:17:36 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/15 11:35:41 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/15 08:17:54 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/15 12:22:19 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp(char *s1, char *s2, unsigned int n)
+char *ft_strstr(char *str, char *to_find)
 {
 	unsigned int i;
+	unsigned int j;
 
 	i = 0;
-	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
+	j = 0;
+	while (str[i] != '\0')
 	{
-		if (s1[i] < s2[i])
+		while (to_find[j] != '\0')
 		{
-			return (-1);
-		}
-		else if (s1[i] > s2[i])
-		{
-			return (1);
+			if (to_find[j] == str[i])
+				return (&to_find[j]);
+			j++;
 		}
 		i++;
 	}
 	return (0);
 }
-
 /*
 #include <stdio.h>
 
 int main()
 {
-	printf("%d\n", ft_strncmp("Hello", "HeLloWorld", 8));
+	printf("%d\n", ft_strstr("Hello", "HeLloWorld"));
 }
-*/
 
+*/

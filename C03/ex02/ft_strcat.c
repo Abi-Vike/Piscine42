@@ -5,44 +5,38 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/14 11:49:14 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/14 12:14:03 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/15 08:17:41 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/15 11:52:34 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
-
 char *ft_strcat(char *dest, char *src)
 {
-	int len;
+	unsigned int i;
+	unsigned int j;
 
-	len = 0;
-	while (*dest)
+	i = 0;
+	j = 0;
+	while (dest[i] != '\0')
 	{
-		len++;
-		dest++;
+		i++;
 	}
-	while (*src)
+	while (src[j] != '\0')
 	{
-		*dest = *src;
-		src++;
-		dest++;
-		len++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
+	dest[i] = '\0';
 
-	*dest = '\0';
-
-	return dest;
+	return (dest);
 }
 
 /*
+#include <stdio.h>
+
 int main()
 {
-	char source[] = "Abi";
-	char destination[] = "Tom";
-
-	ft_strcat(destination, source);
-	printf("Result = %s\n", destination);
-	return(0);
+	printf("%d\n", ft_strcat("Tommy", "Tom"));
 }
 */

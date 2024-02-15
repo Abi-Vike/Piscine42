@@ -1,33 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/15 08:17:36 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/15 11:35:41 by ayacob           ###   ########.fr       */
+/*   Created: 2024/02/14 17:50:38 by ayacob            #+#    #+#             */
+/*   Updated: 2024/02/15 11:52:24 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp(char *s1, char *s2, unsigned int n)
+char *ft_strncat(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
+	unsigned int j;
 
 	i = 0;
-	while ((s1[i] != '\0' || s2[i] != '\0') && i < n)
+	j = 0;
+	while (dest[i] != '\0')
 	{
-		if (s1[i] < s2[i])
-		{
-			return (-1);
-		}
-		else if (s1[i] > s2[i])
-		{
-			return (1);
-		}
 		i++;
 	}
-	return (0);
+	while (src[j] != '\0' && j < n)
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+
+	return (dest);
 }
 
 /*
@@ -35,7 +37,6 @@ int ft_strncmp(char *s1, char *s2, unsigned int n)
 
 int main()
 {
-	printf("%d\n", ft_strncmp("Hello", "HeLloWorld", 8));
+	printf("%d\n", ft_strncat("Tommy", "Tom", 2));
 }
 */
-
