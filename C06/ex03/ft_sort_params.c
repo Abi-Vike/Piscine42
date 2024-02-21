@@ -6,7 +6,7 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 07:56:24 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/21 16:04:42 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/21 17:34:08 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,9 @@ int ft_strcmp(char *s1, char *s2)
 
 void ft_swap(char **a, char **b)
 {
-	char *tmp = *a;
+	char *tmp;
+	
+	tmp = *a;
 	*a = *b;
 	*b = tmp;
 }

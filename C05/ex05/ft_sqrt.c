@@ -6,7 +6,7 @@
 /*   By: ayacob <ayacob@student.42berlin.de>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/20 06:59:03 by ayacob            #+#    #+#             */
-/*   Updated: 2024/02/21 08:35:35 by ayacob           ###   ########.fr       */
+/*   Updated: 2024/02/21 18:38:59 by ayacob           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int ft_sqrt(int nb)
 	i = 1;
 	if (nb >=1)
 	{
-		while ((i * i) <= nb)
+		while (i <= 46340)
 		{
 			if (i * i == nb)
 			{
@@ -29,20 +29,16 @@ int ft_sqrt(int nb)
 	return (0);
 }
 
-/*
 #include <stdio.h>
+#include <limits.h>
 int main(void)
 {
-	int num = -16;
-	int num1 = 0;
-	int num2 = 1;
-	int num3 = 13;
-	int num4 = 16;
-
-	printf("%d\n", ft_sqrt(num));
-	printf("%d\n", ft_sqrt(num1));
-	printf("%d\n", ft_sqrt(num2));
-	printf("%d\n", ft_sqrt(num3));
-	printf("%d\n", ft_sqrt(num4));	
+	printf("%d\n", ft_sqrt(INT_MIN));
+	printf("%d\n", ft_sqrt(-16));
+	printf("%d\n", ft_sqrt(0));
+	printf("%d\n", ft_sqrt(1));
+	printf("%d\n", ft_sqrt(13));
+	printf("%d\n", ft_sqrt(16));
+	printf("%d\n", ft_sqrt(2147395600));
+	printf("%d\n", ft_sqrt(INT_MAX));	
 }
-*/
